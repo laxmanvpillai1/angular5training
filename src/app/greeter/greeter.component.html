@@ -1,0 +1,8 @@
+<h1>
+  Greeter
+</h1>
+<label for="greeterName">Enter your name: </label>
+<input type="text" name="" id="greeterName" #greeterName>
+<input type="button" value="Greet" (click)="newGreetMessage(greeterName.value)">
+
+<h3>{{message}}</h3>

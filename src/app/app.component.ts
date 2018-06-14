@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  showLogo: boolean = true;
+
+  onClearClick(){
+    this.title = "";
+    
+  }
+  
 }
