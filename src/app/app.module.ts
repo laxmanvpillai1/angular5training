@@ -3,16 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { GreeterComponent } from './greeter/greeter.component';
+import { CalculatorOneComponent } from './calculator-one/calculator-one.component';
+import { CalculatorTwoComponent } from './calculator-two/calculator-two.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GreeterComponent
+    GreeterComponent,
+    CalculatorOneComponent,
+    CalculatorTwoComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent, GreeterComponent]
+  bootstrap: [AppComponent, GreeterComponent, CalculatorOneComponent, CalculatorTwoComponent]
 })
 export class AppModule { }
