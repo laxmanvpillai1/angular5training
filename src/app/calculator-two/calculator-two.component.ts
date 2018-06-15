@@ -1,32 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
+import { CalculatorModel } from '../shared/calculator.model';
 
 @Component({
   selector: 'app-calculator-two',
   templateUrl: './calculator-two.component.html',
   styleUrls: ['./calculator-two.component.css']
 })
-export class CalculatorTwoComponent implements OnInit {
+export class CalculatorTwoComponent implements DoCheck {
 
-  public result: number = 0;
+  operator: string = 'add';
+
+  model: CalculatorModel = new CalculatorModel();
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
-  onClickCalculate(number1:number, number2:number, operation:string){
-    
-
-    if(operation==='add')
-      this.result = number1*1+number2*1;
-    else if(operation==='subtract')
-      this.result = number1-number2;
-    else if(operation==='multiply')
-      this.result = number1*number2;
-    else
-      this.result = number1/number2;
-
+  ngDoCheck() {
     
   }
 
+ 
 }
